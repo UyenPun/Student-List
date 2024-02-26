@@ -101,8 +101,8 @@ if (isset($_POST['add_users']) && isset($_POST['quantity'])) {
     <h2 class="d-flex align-items-center">List of Student</h2>
     <div class="d-flex justify-content-between mb-3">
       <span>
-        <a href="/student/create.php" class="btn btn-primary me-2" role="button">New Student</a>
-        <a href="/student/filter.php" class="btn btn-primary me-2" role="button">Filter Student</a>
+        <a href="/Student-List/create.php" class="btn btn-primary me-2" role="button">New Student</a>
+        <a href="/Student-List/filter.php" class="btn btn-primary me-2" role="button">Filter Student</a>
       </span>
       <form method="post" class="d-flex">
         <input type="number" name="quantity" class="form-control me-2" placeholder="Enter quantity" required>
@@ -145,8 +145,8 @@ if (isset($_POST['add_users']) && isset($_POST['quantity'])) {
                             <td>{$row['QueQuan']}</td>
                             <td>{$row['DiemThi']}</td>
                             <td>
-                                <a class='btn btn-primary btm-sm' href='/student/edit.php?ID={$row['ID']}'>Edit</a>
-                                <a class='btn btn-danger btm-sm' href='/student/delete.php?ID={$row['ID']}'>Delete</a>
+                                <a class='btn btn-primary btm-sm' href='/Student-List/edit.php?ID={$row['ID']}'>Edit</a>
+                                <a class='btn btn-danger btm-sm' href='/Student-List/delete.php?ID={$row['ID']}'>Delete</a>
                             </td>
                         </tr>
                         ";

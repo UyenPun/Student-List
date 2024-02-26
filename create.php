@@ -56,7 +56,7 @@ $connection = new mysqli($servername, $username, $password, $database);
 
       $successMessage = "Student added correcltly";
 
-      header("location: /student/index.php");
+      header("location: /Student-List/index.php");
       exit;
 
 
@@ -165,7 +165,7 @@ $connection = new mysqli($servername, $username, $password, $database);
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
         <div class="col-sm-3 d-grid">
-          <a href="/student/index.php" class="btn btn-outline-primary" role="button">Cancel</a>
+          <a href="/Student-List/index.php" class="btn btn-outline-primary" role="button">Cancel</a>
         </div>
       </div>
     </form>

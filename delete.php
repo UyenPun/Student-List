@@ -13,7 +13,7 @@ $ID = $_GET["ID"];
   $sql = "DELETE FROM userinformation WHERE ID=$ID";
   $connection->query($sql);
 }
-header("location: /student/index.php");
+header("location: /Student-List/index.php");
 
 
 ?>

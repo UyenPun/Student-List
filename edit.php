@@ -22,7 +22,7 @@
   if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     // GET method: Show the data of the student
     if (!isset($_GET["ID"])) {
-      header("location: /student/index.php");
+      header("location: /Student-List/index.php");
       exit;
     }
 
@@ -34,7 +34,7 @@
     $row = $result->fetch_assoc();
 
     if (!$row) {
-      header("location: /student/index.php");
+      header("location: /Student-List/index.php");
       exit;
     }
 
@@ -79,7 +79,7 @@
       }
 
       $successMessage = "Client updated correctly";
-      header("location: /student/index.php");
+      header("location: /Student-List/index.php");
       exit;
 
     } while (true);
@@ -186,7 +186,7 @@
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
         <div class="col-sm-3 d-grid">
-          <a href="/student/index.php" class="btn btn-outline-primary" role="button">Cancel</a>
+          <a href="/Student-List/index.php" class="btn btn-outline-primary" role="button">Cancel</a>
         </div>
       </div>
     </form>
